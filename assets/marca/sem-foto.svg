@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Produto ainda sem foto no catálogo">
+  <rect width="400" height="500" fill="#f1e7e1"/>
+  <g transform="translate(200 230)">
+    <path d="M-62 36h124l-14 86a20 20 0 0 1-19.8 17H-28.2A20 20 0 0 1-48 122L-62 36Z" fill="#dcc3b0"/>
+    <path d="M-48 36a48 48 0 0 1 96 0" fill="none" stroke="#dcc3b0" stroke-width="9" stroke-linecap="round"/>
+    <g fill="#c0325d">
+      <circle cx="-26" cy="14" r="17"/>
+      <circle cx="8" cy="4" r="21"/>
+      <circle cx="40" cy="18" r="14"/>
+    </g>
+    <g fill="#e08ca8">
+      <circle cx="-26" cy="14" r="7"/>
+      <circle cx="8" cy="4" r="9"/>
+      <circle cx="40" cy="18" r="6"/>
+    </g>
+    <path d="M-50 26c-14-10-22-26-20-42 16 2 30 14 34 30" fill="#2f5339"/>
+    <path d="M58 30c14-8 23-23 22-39-16 1-30 12-35 28" fill="#3c5a46"/>
+  </g>
+  <text x="200" y="376" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#6c565c">Foto sob consulta</text>
+</svg>
