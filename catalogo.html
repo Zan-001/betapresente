@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo — Beta Presentes</title>
+<meta name="description" content="Os 204 presentes da Beta Presentes: buquês, cestas de café, chocolates, bebidas, orquídeas, pelúcias e presentes masculinos, com preços do catálogo oficial.">
+<meta name="theme-color" content="#e04e7b">
+<meta property="og:title" content="Catálogo — Beta Presentes">
+<meta property="og:description" content="Os 204 presentes da Beta Presentes: buquês, cestas de café, chocolates, bebidas, orquídeas, pelúcias e presentes masculinos, com preços do catálogo oficial.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/marca/icone.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/estilo.css">
+
+</head>
+<body><a class="pular" href="#principal">Ir direto ao conteúdo</a>
+<header class="topo">
+  <div class="faixa"><div class="topo__linha">
+    <a class="marca" href="index.html">
+      <span class="marca__selo"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><path d="M4.5 9.5h15l-1.6 9.1a2 2 0 0 1-2 1.65H8.1a2 2 0 0 1-2-1.65L4.5 9.5Z" fill="#fff" opacity=".92"/><path d="M8.2 9.5a3.8 3.8 0 0 1 7.6 0" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/><circle cx="12" cy="6.4" r="1.9" fill="#fff"/><path d="M9.4 7.6a1.5 1.5 0 1 1 1.5-2.1M14.6 7.6a1.5 1.5 0 1 0-1.5-2.1" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/></svg></span>
+      <span><span class="marca__nome">Beta Presentes</span><span class="marca__local">Rua dos Lírios, 710 · Cajamar — SP</span></span>
+    </a>
+    <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir o menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+    <nav class="menu" id="menu" data-aberto="nao" aria-label="Principal">
+      <a href="catalogo.html">Catálogo</a>
+      <a href="index.html#giro">Ver os ângulos</a>
+      <a href="sobre.html">A loja</a>
+      <a href="index.html#entrega">Entrega</a>
+      <a class="botao" data-zap="Olá! Vim pelo site da Beta Presentes e gostaria de fazer um pedido." href="#">Pedir no WhatsApp</a>
+    </nav>
+  </div></div>
+</header><main id="principal">
+<section class="faixa"><div class="quadro">
+  <div style="padding-top:clamp(30px,4.5vw,64px)">
+    <h1 style="max-width:16ch">O catálogo inteiro</h1>
+    <p class="capa__frase">204 presentes, de R$ 10,00 a R$ 899,99. Filtre por categoria, por preço ou procure pelo nome.</p>
+  </div>
+
+  <div class="filtros" role="group" aria-label="Filtros do catálogo">
+    <div class="filtros__linha">
+      <label class="busca">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="busca" placeholder="Procurar presente" aria-label="Procurar presente pelo nome">
+      </label>
+      <div class="faixa-preco">
+        <label for="teto">Até</label>
+        <input type="range" id="teto" min="20" max="900" step="5" value="900">
+        <output id="teto-valor">R$ 899,99</output>
+      </div>
+    </div>
+    <div class="filtros__cats" role="group" aria-label="Categorias">
+      <button class="pilula" type="button" data-filtro="todos" aria-pressed="true">Tudo</button><button class="pilula" type="button" data-filtro="cestas-de-cafe-da-manha-ou-tarde" aria-pressed="false">Cestas de Café da manhã ou tarde</button><button class="pilula" type="button" data-filtro="cestas-de-chocolate" aria-pressed="false">Cestas de Chocolate</button><button class="pilula" type="button" data-filtro="cestas-de-frutas" aria-pressed="false">Cestas de frutas</button><button class="pilula" type="button" data-filtro="cestas-kids" aria-pressed="false">Cestas Kids</button><button class="pilula" type="button" data-filtro="cestas-de-bebidas-especiais" aria-pressed="false">Cestas de bebidas especiais</button><button class="pilula" type="button" data-filtro="buques-de-rosas" aria-pressed="false">Buquês de rosas</button><button class="pilula" type="button" data-filtro="buques-de-girassois" aria-pressed="false">Buquês de Girassóis</button><button class="pilula" type="button" data-filtro="flores-e-plantas" aria-pressed="false">Flores e plantas</button><button class="pilula" type="button" data-filtro="orquideas" aria-pressed="false">Orquídeas</button><button class="pilula" type="button" data-filtro="presentes" aria-pressed="false">Presentes</button><button class="pilula" type="button" data-filtro="presentes-masculinos" aria-pressed="false">Presentes Masculinos</button><button class="pilula" type="button" data-filtro="cesta-matenidade" aria-pressed="false">Cesta Matenidade</button><button class="pilula" type="button" data-filtro="pelucia" aria-pressed="false">Pelucia</button>
+    </div>
+  </div>
+
+  <p class="conta-resultado" id="conta" aria-live="polite"></p>
+
+  <div id="resultados">
+    <section class="grupo-categoria" id="cestas-de-cafe-da-manha-ou-tarde" data-grupo="cestas-de-cafe-da-manha-ou-tarde">
+  <h2>Cestas de Café da manhã ou tarde</h2>
+  <div class="grade"><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="125" data-nome="mini cesta de café aconchego" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886389.jpg" alt="Mini Cesta de Café Aconchego" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mini-cesta-de-cafe-aconchego-2886389.html">Mini Cesta de Café Aconchego</a></h3>
+  <p class="peca__preco"><b>R$ 125,00</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="159.9" data-nome="cesta café na box" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886388.jpg" alt="Cesta Café na Box" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-cafe-na-box-2886388.html">Cesta Café na Box</a></h3>
+  <p class="peca__preco"><b>R$ 159,90</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="180" data-nome="cesta café gourmezinho" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4504006.jpg" alt="Cesta café Gourmezinho" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-cafe-gourmezinho-4504006.html">Cesta café Gourmezinho</a></h3>
+  <p class="peca__preco"><b>R$ 180,00</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="209.99" data-nome="cesta declaração" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886390.jpg" alt="Cesta Declaração" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-declaracao-2886390.html">Cesta Declaração</a></h3>
+  <p class="peca__preco"><b>R$ 209,99</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="275" data-nome="cesta premium com caneca" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886391.jpg" alt="Cesta Premium com caneca" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-premium-com-caneca-2886391.html">Cesta Premium com caneca</a></h3>
+  <p class="peca__preco"><b>R$ 275,00</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="275" data-nome="cesta premium com almofada" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4524434.jpg" alt="Cesta Premium com almofada" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-premium-com-almofada-4524434.html">Cesta Premium com almofada</a></h3>
+  <p class="peca__preco"><b>R$ 275,00</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="275" data-nome="cesta premium com mini bolo" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886400.jpg" alt="Cesta Premium com Mini Bolo" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-premium-com-mini-bolo-2886400.html">Cesta Premium com Mini Bolo</a></h3>
+  <p class="peca__preco"><b>R$ 275,00</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="265" data-nome="cesta premium com bolinho caseiro" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3649575.jpg" alt="Cesta Premium com Bolinho Caseiro" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-premium-com-bolinho-caseiro-3649575.html">Cesta Premium com Bolinho Caseiro</a></h3>
+  <p class="peca__preco"><b>R$ 265,00</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="274.99" data-nome="café especial completo" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4230882.jpg" alt="Café Especial Completo" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cafe-especial-completo-4230882.html">Café Especial Completo</a></h3>
+  <p class="peca__preco"><b>R$ 274,99</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="265" data-nome="cesta gourmet com bolo caseiro" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886399.jpg" alt="Cesta gourmet com bolo caseiro" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-gourmet-com-bolo-caseiro-2886399.html">Cesta gourmet com bolo caseiro</a></h3>
+  <p class="peca__preco"><b>R$ 265,00</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="320" data-nome="cesta baú café completo" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/2886387.jpg" alt="Cesta Baú Café Completo" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-bau-cafe-completo-2886387.html">Cesta Baú Café Completo</a></h3>
+  <p class="peca__preco"><b>R$ 320,00</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="325" data-nome="box luxo gourmet" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886700.jpg" alt="Box Luxo Gourmet" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-luxo-gourmet-2886700.html">Box Luxo Gourmet</a></h3>
+  <p class="peca__preco"><b>R$ 325,00</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="360" data-nome="cesta de café stitch" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3524975.jpg" alt="Cesta de Café Stitch" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-de-cafe-stitch-3524975.html">Cesta de Café Stitch</a></h3>
+  <p class="peca__preco"><b>R$ 360,00</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="178" data-nome="café declaração" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/4230183.jpg" alt="Café Declaração" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cafe-declaracao-4230183.html">Café Declaração</a></h3>
+  <p class="peca__preco"><b>R$ 178,00</b></p>
+</article><article class="peca" data-cat="cestas-de-cafe-da-manha-ou-tarde" data-preco="160" data-nome="café na caixa" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/marca/sem-foto.svg" alt="Café na caixa" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cafe-na-caixa-5029126.html">Café na caixa</a></h3>
+  <p class="peca__preco"><b>R$ 160,00</b></p>
+</article></div>
+</section><section class="grupo-categoria" id="cestas-de-chocolate" data-grupo="cestas-de-chocolate">
+  <h2>Cestas de Chocolate</h2>
+  <div class="grade"><article class="peca" data-cat="cestas-de-chocolate" data-preco="79.99" data-nome="mimo com ursinho" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3715476.jpg" alt="Mimo com ursinho" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mimo-com-ursinho-3715476.html">Mimo com ursinho</a></h3>
+  <p class="peca__preco"><b>R$ 79,99</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="125" data-nome="cesta envio de amor" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Mais pedido</span><img src="assets/produtos/2886398.jpg" alt="Cesta envio de Amor" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-envio-de-amor-2886398.html">Cesta envio de Amor</a></h3>
+  <p class="peca__preco"><b>R$ 125,00</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="109.99" data-nome="coração de chocolate" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/2886677.jpg" alt="Coração de Chocolate" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/coracao-de-chocolate-2886677.html">Coração de Chocolate</a></h3>
+  <p class="peca__preco"><b>R$ 109,99</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="119.9" data-nome="box de chocolate" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3027024.jpg" alt="Box de Chocolate" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-de-chocolate-3027024.html">Box de Chocolate</a></h3>
+  <p class="peca__preco"><b>R$ 119,90</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="165" data-nome="box fofura" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886698.jpg" alt="Box Fofura" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-fofura-2886698.html">Box Fofura</a></h3>
+  <p class="peca__preco"><b>R$ 165,00</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="220" data-nome="display de chocolate pequena com pelucia" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3715480.jpg" alt="Display de chocolate pequena com Pelucia" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/display-de-chocolate-pequena-com-pelucia-3715480.html">Display de chocolate pequena com Pelucia</a></h3>
+  <p class="peca__preco"><b>R$ 220,00</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="179.99" data-nome="cesta elegancia" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Novidade</span><img src="assets/produtos/5160740.jpg" alt="Cesta elegancia" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-elegancia-5160740.html">Cesta elegancia</a></h3>
+  <p class="peca__preco"><b>R$ 179,99</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="195" data-nome="cesta carinho com caneca" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2985041.jpg" alt="Cesta Carinho com caneca" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-carinho-com-caneca-2985041.html">Cesta Carinho com caneca</a></h3>
+  <p class="peca__preco"><b>R$ 195,00</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="249.99" data-nome="cesta carinho com ursinho" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2985043.jpg" alt="Cesta carinho com ursinho" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-carinho-com-ursinho-2985043.html">Cesta carinho com ursinho</a></h3>
+  <p class="peca__preco"><b>R$ 249,99</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="279.99" data-nome="cesta display de chocolates  diversos com pelúcia ou almofada" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886397.jpg" alt="Cesta Display de Chocolates  diversos com Pelúcia ou Almofada" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-display-de-chocolates-diversos-com-pelucia-ou-almofada-2886397.html">Cesta Display de Chocolates  diversos com Pelúcia ou Almofada</a></h3>
+  <p class="peca__preco"><b>R$ 279,99</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="140" data-nome="box de chocolate com pelúcia coração" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3715478.jpg" alt="Box de Chocolate com pelúcia coração" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-de-chocolate-com-pelucia-coracao-3715478.html">Box de Chocolate com pelúcia coração</a></h3>
+  <p class="peca__preco"><b>R$ 140,00</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="150" data-nome="cesta display de chocolates com flor - pequena" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3487631.jpg" alt="Cesta Display de Chocolates com flor - Pequena" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-display-de-chocolates-com-flor-pequena-3487631.html">Cesta Display de Chocolates com flor - Pequena</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="154.99" data-nome="cesta chocolove" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/4229983.jpg" alt="Cesta Chocolove" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-chocolove-4229983.html">Cesta Chocolove</a></h3>
+  <p class="peca__preco"><b>R$ 154,99</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="140" data-nome="box guloseimas com coca cola" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Mais pedido</span><img src="assets/produtos/4542492.jpg" alt="Box Guloseimas com Coca Cola" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-guloseimas-com-coca-cola-4542492.html">Box Guloseimas com Coca Cola</a></h3>
+  <p class="peca__preco"><b>R$ 140,00</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="150" data-nome="box guloseimas com cerveja" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4542494.jpg" alt="Box Guloseimas com Cerveja" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-guloseimas-com-cerveja-4542494.html">Box Guloseimas com Cerveja</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="cestas-de-chocolate" data-preco="359.9" data-nome="bag de chocolates com mini bolo" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5176759.jpg" alt="Bag de chocolates com mini bolo" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/bag-de-chocolates-com-mini-bolo-5176759.html">Bag de chocolates com mini bolo</a></h3>
+  <p class="peca__preco"><b>R$ 359,90</b></p>
+</article></div>
+</section><section class="grupo-categoria" id="cestas-de-frutas" data-grupo="cestas-de-frutas">
+  <h2>Cestas de frutas</h2>
+  <div class="grade"><article class="peca" data-cat="cestas-de-frutas" data-preco="229.9" data-nome="cesta de frutas" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886395.jpg" alt="Cesta de frutas" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-de-frutas-2886395.html">Cesta de frutas</a></h3>
+  <p class="peca__preco"><b>R$ 229,90</b></p>
+</article></div>
+</section><section class="grupo-categoria" id="cestas-kids" data-grupo="cestas-kids">
+  <h2>Cestas Kids</h2>
+  <div class="grade"><article class="peca" data-cat="cestas-kids" data-preco="84.9" data-nome="cesta mini piquenique" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5348793.jpg" alt="Cesta Mini Piquenique" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-mini-piquenique-5348793.html">Cesta Mini Piquenique</a></h3>
+  <p class="peca__preco"><b>R$ 84,90</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="85" data-nome="mimo feliz" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5348794.jpg" alt="Mimo Feliz" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mimo-feliz-5348794.html">Mimo Feliz</a></h3>
+  <p class="peca__preco"><b>R$ 85,00</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="89.9" data-nome="cesta diversão e cores" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5348796.jpg" alt="Cesta Diversão e cores" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-diversao-e-cores-5348796.html">Cesta Diversão e cores</a></h3>
+  <p class="peca__preco"><b>R$ 89,90</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="95" data-nome="cesta mimo kids" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5348812.jpg" alt="Cesta Mimo Kids" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-mimo-kids-5348812.html">Cesta Mimo Kids</a></h3>
+  <p class="peca__preco"><b>R$ 95,00</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="115" data-nome="cesta squeech" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5348799.jpg" alt="Cesta Squeech" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-squeech-5348799.html">Cesta Squeech</a></h3>
+  <p class="peca__preco"><b>R$ 115,00</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="170" data-nome="cesta café kids" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5349056.jpg" alt="Cesta Café Kids" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-cafe-kids-5349056.html">Cesta Café Kids</a></h3>
+  <p class="peca__preco"><b>R$ 170,00</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="195" data-nome="cesta choco kids" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5349108.jpg" alt="Cesta Choco Kids" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-choco-kids-5349108.html">Cesta Choco Kids</a></h3>
+  <p class="peca__preco"><b>R$ 195,00</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="220" data-nome="box angel/stitch" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886680.jpg" alt="Box Angel/Stitch" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-angel-stitch-2886680.html">Box Angel/Stitch</a></h3>
+  <p class="peca__preco"><b>R$ 220,00</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="150" data-nome="box bobbie goods lanchinho-médio" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2950883.jpg" alt="Box Bobbie Goods Lanchinho-Médio" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-bobbie-goods-lanchinho-medio-2950883.html">Box Bobbie Goods Lanchinho-Médio</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="275" data-nome="cesta premium com almofada" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4524442.jpg" alt="Cesta Premium com almofada" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-premium-com-almofada-4524442.html">Cesta Premium com almofada</a></h3>
+  <p class="peca__preco"><b>R$ 275,00</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="35" data-nome="almofadinha stitch" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955412.jpg" alt="Almofadinha Stitch" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/almofadinha-stitch-2955412.html">Almofadinha Stitch</a></h3>
+  <p class="peca__preco"><b>R$ 35,00</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="20" data-nome="carteirinha do stitch" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/marca/sem-foto.svg" alt="Carteirinha do Stitch" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/carteirinha-do-stitch-2975002.html">Carteirinha do Stitch</a></h3>
+  <p class="peca__preco"><b>R$ 20,00</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="15" data-nome="balão kids" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955417.jpg" alt="Balão Kids" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/balao-kids-2955417.html">Balão Kids</a></h3>
+  <p class="peca__preco"><b>R$ 15,00</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="49.99" data-nome="caneca princesa sofia na lata" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5349160.jpg" alt="Caneca Princesa Sofia na lata" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/caneca-princesa-sofia-na-lata-5349160.html">Caneca Princesa Sofia na lata</a></h3>
+  <p class="peca__preco"><b>R$ 49,99</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="49.99" data-nome="caneca jake na lata" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5349166.jpg" alt="Caneca Jake na lata" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/caneca-jake-na-lata-5349166.html">Caneca Jake na lata</a></h3>
+  <p class="peca__preco"><b>R$ 49,99</b></p>
+</article><article class="peca" data-cat="cestas-kids" data-preco="18" data-nome="sacola para presente" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3028942.jpg" alt="Sacola para presente" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/sacola-para-presente-3028942.html">Sacola para presente</a></h3>
+  <p class="peca__preco"><b>R$ 18,00</b></p>
+</article></div>
+</section><section class="grupo-categoria" id="cestas-de-bebidas-especiais" data-grupo="cestas-de-bebidas-especiais">
+  <h2>Cestas de bebidas especiais</h2>
+  <div class="grade"><article class="peca" data-cat="cestas-de-bebidas-especiais" data-preco="220" data-nome="box cerveja" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886392.jpg" alt="Box Cerveja" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-cerveja-2886392.html">Box Cerveja</a></h3>
+  <p class="peca__preco"><b>R$ 220,00</b></p>
+</article><article class="peca" data-cat="cestas-de-bebidas-especiais" data-preco="250" data-nome="box luxo mini vinho" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886701.jpg" alt="Box luxo mini vinho" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-luxo-mini-vinho-2886701.html">Box luxo mini vinho</a></h3>
+  <p class="peca__preco"><b>R$ 250,00</b></p>
+</article><article class="peca" data-cat="cestas-de-bebidas-especiais" data-preco="340" data-nome="cesta de vinho com chocolates individual" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3027240.jpg" alt="Cesta de vinho com chocolates Individual" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-de-vinho-com-chocolates-individual-3027240.html">Cesta de vinho com chocolates Individual</a></h3>
+  <p class="peca__preco"><b>R$ 340,00</b></p>
+</article><article class="peca" data-cat="cestas-de-bebidas-especiais" data-preco="290" data-nome="bag de cerveja" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886683.jpg" alt="Bag de Cerveja" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/bag-de-cerveja-2886683.html">Bag de Cerveja</a></h3>
+  <p class="peca__preco"><b>R$ 290,00</b></p>
+</article><article class="peca" data-cat="cestas-de-bebidas-especiais" data-preco="360" data-nome="box luxo whisky jack daniels 375 ml" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886702.jpg" alt="Box Luxo Whisky Jack Daniels 375 ml" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-luxo-whisky-jack-daniels-375-ml-2886702.html">Box Luxo Whisky Jack Daniels 375 ml</a></h3>
+  <p class="peca__preco"><b>R$ 360,00</b></p>
+</article><article class="peca" data-cat="cestas-de-bebidas-especiais" data-preco="360" data-nome="cesta de vinho com chocolate casal" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886396.jpg" alt="Cesta de vinho com Chocolate Casal" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-de-vinho-com-chocolate-casal-2886396.html">Cesta de vinho com Chocolate Casal</a></h3>
+  <p class="peca__preco"><b>R$ 360,00</b></p>
+</article><article class="peca" data-cat="cestas-de-bebidas-especiais" data-preco="179.99" data-nome="cesta elegancia" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5160738.jpg" alt="Cesta elegancia" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-elegancia-5160738.html">Cesta elegancia</a></h3>
+  <p class="peca__preco"><b>R$ 179,99</b></p>
+</article><article class="peca" data-cat="cestas-de-bebidas-especiais" data-preco="150" data-nome="box guloseimas com cerveja" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4542493.jpg" alt="Box Guloseimas com Cerveja" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-guloseimas-com-cerveja-4542493.html">Box Guloseimas com Cerveja</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="cestas-de-bebidas-especiais" data-preco="194.99" data-nome="box cerveja" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4230100.jpg" alt="Box cerveja" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-cerveja-4230100.html">Box cerveja</a></h3>
+  <p class="peca__preco"><b>R$ 194,99</b></p>
+</article><article class="peca" data-cat="cestas-de-bebidas-especiais" data-preco="279.99" data-nome="box mini vinho" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4229999.jpg" alt="Box Mini Vinho" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-mini-vinho-4229999.html">Box Mini Vinho</a></h3>
+  <p class="peca__preco"><b>R$ 279,99</b></p>
+</article><article class="peca" data-cat="cestas-de-bebidas-especiais" data-preco="320" data-nome="bag de vinho cartonada" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3067964.jpg" alt="Bag de vinho cartonada" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/bag-de-vinho-cartonada-3067964.html">Bag de vinho cartonada</a></h3>
+  <p class="peca__preco"><b>R$ 320,00</b></p>
+</article></div>
+</section><section class="grupo-categoria" id="buques-de-rosas" data-grupo="buques-de-rosas">
+  <h2>Buquês de rosas</h2>
+  <div class="grade"><article class="peca" data-cat="buques-de-rosas" data-preco="60" data-nome="rosa aurora colorida" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3696650.jpg" alt="Rosa Aurora Colorida" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/rosa-aurora-colorida-3696650.html">Rosa Aurora Colorida</a></h3>
+  <p class="peca__preco"><b>R$ 60,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="60" data-nome="rosa aurora vermelha" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Mais pedido</span><img src="assets/produtos/3401869.jpg" alt="Rosa Aurora Vermelha" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/rosa-aurora-vermelha-3401869.html">Rosa Aurora Vermelha</a></h3>
+  <p class="peca__preco"><b>R$ 60,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="120" data-nome="mini buquê de flores vermelha" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886422.jpg" alt="Mini Buquê de Flores Vermelha" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mini-buque-de-flores-vermelha-2886422.html">Mini Buquê de Flores Vermelha</a></h3>
+  <p class="peca__preco"><b>R$ 120,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="120" data-nome="mini buquê de flores colorida" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3696667.jpg" alt="Mini Buquê de Flores Colorida" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mini-buque-de-flores-colorida-3696667.html">Mini Buquê de Flores Colorida</a></h3>
+  <p class="peca__preco"><b>R$ 120,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="30" data-nome="rosa no cone kraft" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3696583.jpg" alt="Rosa no cone Kraft" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/rosa-no-cone-kraft-3696583.html">Rosa no cone Kraft</a></h3>
+  <p class="peca__preco"><b>R$ 30,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="47" data-nome="mimo doce" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3568930.jpg" alt="Mimo Doce" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mimo-doce-3568930.html">Mimo Doce</a></h3>
+  <p class="peca__preco"><b>R$ 47,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="47" data-nome="rosa no card" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5176718.jpg" alt="Rosa no Card" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/rosa-no-card-5176718.html">Rosa no Card</a></h3>
+  <p class="peca__preco"><b>R$ 47,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="55" data-nome="rosa premium individual vermelha" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886425.jpg" alt="Rosa Premium Individual Vermelha" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/rosa-premium-individual-vermelha-2886425.html">Rosa Premium Individual Vermelha</a></h3>
+  <p class="peca__preco"><b>R$ 55,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="75" data-nome="arranjo de girassol com rosa" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4252639.jpg" alt="Arranjo de Girassol com rosa" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/arranjo-de-girassol-com-rosa-4252639.html">Arranjo de Girassol com rosa</a></h3>
+  <p class="peca__preco"><b>R$ 75,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="375" data-nome="rosa eterna" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4643367.jpg" alt="Rosa Eterna" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/rosa-eterna-4643367.html">Rosa Eterna</a></h3>
+  <p class="peca__preco"><b>R$ 375,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="140" data-nome="buquê na sacola" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886405.jpg" alt="Buquê na sacola" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-na-sacola-2886405.html">Buquê na sacola</a></h3>
+  <p class="peca__preco"><b>R$ 140,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="150" data-nome="buquê p com 4 rosas coloridas" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/marca/sem-foto.svg" alt="Buquê P com 4 rosas Coloridas" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-p-com-4-rosas-coloridas-3696788.html">Buquê P com 4 rosas Coloridas</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="150" data-nome="buquê primavera flores campestres" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/2915430.jpg" alt="Buquê Primavera Flores Campestres" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-primavera-flores-campestres-2915430.html">Buquê Primavera Flores Campestres</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="170" data-nome="buquê p com 4 rosas" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886407.jpg" alt="Buquê P com 4 rosas" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-p-com-4-rosas-2886407.html">Buquê P com 4 rosas</a></h3>
+  <p class="peca__preco"><b>R$ 170,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="190" data-nome="buquê encanto rosas" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886417.jpg" alt="Buquê Encanto rosas" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-encanto-rosas-2886417.html">Buquê Encanto rosas</a></h3>
+  <p class="peca__preco"><b>R$ 190,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="220" data-nome="buque de lírios e rosas" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Oferta</span><img src="assets/produtos/3692605.jpg" alt="Buque de lírios e rosas" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-de-lirios-e-rosas-3692605.html">Buque de lírios e rosas</a></h3>
+  <p class="peca__preco"><b>R$ 220,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="200" data-nome="buquê m com 6 rosas vermelhas" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886404.jpg" alt="Buquê M com 6 rosas Vermelhas" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-m-com-6-rosas-vermelhas-2886404.html">Buquê M com 6 rosas Vermelhas</a></h3>
+  <p class="peca__preco"><b>R$ 200,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="20" data-nome="rosa solitária vermelha" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886401.jpg" alt="Rosa Solitária Vermelha" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/rosa-solitaria-vermelha-2886401.html">Rosa Solitária Vermelha</a></h3>
+  <p class="peca__preco"><b>R$ 20,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="20" data-nome="rosa solitária colorida" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3696272.jpg" alt="Rosa Solitária Colorida" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/rosa-solitaria-colorida-3696272.html">Rosa Solitária Colorida</a></h3>
+  <p class="peca__preco"><b>R$ 20,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="230" data-nome="buquê viva a vida" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3973832.jpg" alt="Buquê viva a vida" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-viva-a-vida-3973832.html">Buquê viva a vida</a></h3>
+  <p class="peca__preco"><b>R$ 230,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="280" data-nome="box luxo floral redonda" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4234048.jpg" alt="Box Luxo Floral Redonda" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-luxo-floral-redonda-4234048.html">Box Luxo Floral Redonda</a></h3>
+  <p class="peca__preco"><b>R$ 280,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="305" data-nome="buquê g com 12 rosas" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886403.jpg" alt="Buquê G com 12 rosas" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-g-com-12-rosas-2886403.html">Buquê G com 12 rosas</a></h3>
+  <p class="peca__preco"><b>R$ 305,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="305" data-nome="buquê alice" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5289948.jpg" alt="Buquê Alice" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-alice-5289948.html">Buquê Alice</a></h3>
+  <p class="peca__preco"><b>R$ 305,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="320" data-nome="buquê de rosas e girassóis" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3309491.jpg" alt="Buquê de rosas e Girassóis" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-de-rosas-e-girassois-3309491.html">Buquê de rosas e Girassóis</a></h3>
+  <p class="peca__preco"><b>R$ 320,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="330" data-nome="box luxo floral de coração" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4233981.jpg" alt="Box Luxo Floral de Coração" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-luxo-floral-de-coracao-4233981.html">Box Luxo Floral de Coração</a></h3>
+  <p class="peca__preco"><b>R$ 330,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="330" data-nome="box luxo buquê floral rosas vermelhas ferrero rocher" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886402.jpg" alt="Box Luxo Buquê Floral Rosas vermelhas Ferrero Rocher" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-luxo-buque-floral-rosas-vermelhas-ferrero-rocher-2886402.html">Box Luxo Buquê Floral Rosas vermelhas Ferrero Rocher</a></h3>
+  <p class="peca__preco"><b>R$ 330,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="220" data-nome="buquê do stitch 15 cm" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886416.jpg" alt="Buquê do Stitch 15 cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-do-stitch-15-cm-2886416.html">Buquê do Stitch 15 cm</a></h3>
+  <p class="peca__preco"><b>R$ 220,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="280" data-nome="buquê stitch/angel 25 cm" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886409.jpg" alt="Buquê Stitch/Angel 25 cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-stitch-angel-25-cm-2886409.html">Buquê Stitch/Angel 25 cm</a></h3>
+  <p class="peca__preco"><b>R$ 280,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="437.99" data-nome="box luxo premium" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4229996.jpg" alt="Box Luxo Premium" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-luxo-premium-4229996.html">Box Luxo Premium</a></h3>
+  <p class="peca__preco"><b>R$ 437,99</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="670" data-nome="buquê com 30 rosas mistas" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3732217.jpg" alt="Buquê com 30 rosas MISTAS" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-com-30-rosas-mistas-3732217.html">Buquê com 30 rosas MISTAS</a></h3>
+  <p class="peca__preco"><b>R$ 670,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="570" data-nome="box luxo celebrar" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3356196.jpg" alt="Box Luxo Celebrar" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-luxo-celebrar-3356196.html">Box Luxo Celebrar</a></h3>
+  <p class="peca__preco"><b>R$ 570,00</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="899.99" data-nome="buquê com 50 rosas mistas" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3913416.jpg" alt="Buquê com 50 rosas MISTAS" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-com-50-rosas-mistas-3913416.html">Buquê com 50 rosas MISTAS</a></h3>
+  <p class="peca__preco"><b>R$ 899,99</b></p>
+</article><article class="peca" data-cat="buques-de-rosas" data-preco="12" data-nome="rosa avulsa" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3483352.jpg" alt="Rosa Avulsa" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/rosa-avulsa-3483352.html">Rosa Avulsa</a></h3>
+  <p class="peca__preco"><b>R$ 12,00</b></p>
+</article></div>
+</section><section class="grupo-categoria" id="buques-de-girassois" data-grupo="buques-de-girassois">
+  <h2>Buquês de Girassóis</h2>
+  <div class="grade"><article class="peca" data-cat="buques-de-girassois" data-preco="50" data-nome="girassol solitário no arranjo" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Mais pedido</span><img src="assets/produtos/2886420.jpg" alt="Girassol solitário no arranjo" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/girassol-solitario-no-arranjo-2886420.html">Girassol solitário no arranjo</a></h3>
+  <p class="peca__preco"><b>R$ 50,00</b></p>
+</article><article class="peca" data-cat="buques-de-girassois" data-preco="75" data-nome="arranjo de girassol com rosa" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4252634.jpg" alt="Arranjo de Girassol com rosa" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/arranjo-de-girassol-com-rosa-4252634.html">Arranjo de Girassol com rosa</a></h3>
+  <p class="peca__preco"><b>R$ 75,00</b></p>
+</article><article class="peca" data-cat="buques-de-girassois" data-preco="160" data-nome="buquê pequeno de girassóis" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886408.jpg" alt="Buquê Pequeno de Girassóis" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-pequeno-de-girassois-2886408.html">Buquê Pequeno de Girassóis</a></h3>
+  <p class="peca__preco"><b>R$ 160,00</b></p>
+</article><article class="peca" data-cat="buques-de-girassois" data-preco="195" data-nome="buquê médio de girassóis" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886418.jpg" alt="Buquê Médio de Girassóis" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-medio-de-girassois-2886418.html">Buquê Médio de Girassóis</a></h3>
+  <p class="peca__preco"><b>R$ 195,00</b></p>
+</article><article class="peca" data-cat="buques-de-girassois" data-preco="200" data-nome="buquê noite estrelada" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886406.jpg" alt="Buquê Noite Estrelada" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-noite-estrelada-2886406.html">Buquê Noite Estrelada</a></h3>
+  <p class="peca__preco"><b>R$ 200,00</b></p>
+</article><article class="peca" data-cat="buques-de-girassois" data-preco="220" data-nome="buquê viva a vida" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3973838.jpg" alt="Buquê viva a vida" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-viva-a-vida-3973838.html">Buquê viva a vida</a></h3>
+  <p class="peca__preco"><b>R$ 220,00</b></p>
+</article><article class="peca" data-cat="buques-de-girassois" data-preco="320" data-nome="buquê de rosas e girassóis (cópia)" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3309497.jpg" alt="Buquê de rosas e Girassóis (Cópia)" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-de-rosas-e-girassois-copia-3309497.html">Buquê de rosas e Girassóis (Cópia)</a></h3>
+  <p class="peca__preco"><b>R$ 320,00</b></p>
+</article><article class="peca" data-cat="buques-de-girassois" data-preco="290" data-nome="buque grande 10 girassóis" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3500457.jpg" alt="Buque grande 10 girassóis" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/buque-grande-10-girassois-3500457.html">Buque grande 10 girassóis</a></h3>
+  <p class="peca__preco"><b>R$ 290,00</b></p>
+</article></div>
+</section><section class="grupo-categoria" id="flores-e-plantas" data-grupo="flores-e-plantas">
+  <h2>Flores e plantas</h2>
+  <div class="grade"><article class="peca" data-cat="flores-e-plantas" data-preco="38" data-nome="bambu da sorte decorativo" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886414.jpg" alt="Bambu da sorte decorativo" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/bambu-da-sorte-decorativo-2886414.html">Bambu da sorte decorativo</a></h3>
+  <p class="peca__preco"><b>R$ 38,00</b></p>
+</article><article class="peca" data-cat="flores-e-plantas" data-preco="40" data-nome="flor no cachepô" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886419.jpg" alt="Flor no cachepô" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/flor-no-cachepo-2886419.html">Flor no cachepô</a></h3>
+  <p class="peca__preco"><b>R$ 40,00</b></p>
+</article><article class="peca" data-cat="flores-e-plantas" data-preco="70" data-nome="kokedama" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886411.jpg" alt="Kokedama" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/kokedama-2886411.html">Kokedama</a></h3>
+  <p class="peca__preco"><b>R$ 70,00</b></p>
+</article><article class="peca" data-cat="flores-e-plantas" data-preco="60" data-nome="bambu da sorte médio" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886415.jpg" alt="Bambu da sorte médio" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/bambu-da-sorte-medio-2886415.html">Bambu da sorte médio</a></h3>
+  <p class="peca__preco"><b>R$ 60,00</b></p>
+</article><article class="peca" data-cat="flores-e-plantas" data-preco="105" data-nome="cachepo floral" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Mais pedido</span><img src="assets/produtos/2886705.jpg" alt="Cachepo Floral" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cachepo-floral-2886705.html">Cachepo Floral</a></h3>
+  <p class="peca__preco"><b>R$ 105,00</b></p>
+</article><article class="peca" data-cat="flores-e-plantas" data-preco="115" data-nome="mimo floral com ursinho" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886421.jpg" alt="Mimo Floral com Ursinho" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mimo-floral-com-ursinho-2886421.html">Mimo Floral com Ursinho</a></h3>
+  <p class="peca__preco"><b>R$ 115,00</b></p>
+</article><article class="peca" data-cat="flores-e-plantas" data-preco="120" data-nome="mimo floral com ferrero de 4unds" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4596513.jpg" alt="Mimo Floral com Ferrero de 4unds" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mimo-floral-com-ferrero-de-4unds-4596513.html">Mimo Floral com Ferrero de 4unds</a></h3>
+  <p class="peca__preco"><b>R$ 120,00</b></p>
+</article><article class="peca" data-cat="flores-e-plantas" data-preco="60" data-nome="flor no cachepô com barra de chocolate" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3120744.jpg" alt="Flor no cachepô com Barra de chocolate" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/flor-no-cachepo-com-barra-de-chocolate-3120744.html">Flor no cachepô com Barra de chocolate</a></h3>
+  <p class="peca__preco"><b>R$ 60,00</b></p>
+</article><article class="peca" data-cat="flores-e-plantas" data-preco="80" data-nome="callas plantada" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/marca/sem-foto.svg" alt="Callas Plantada" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/callas-plantada-4841906.html">Callas Plantada</a></h3>
+  <p class="peca__preco"><b>R$ 80,00</b></p>
+</article></div>
+</section><section class="grupo-categoria" id="orquideas" data-grupo="orquideas">
+  <h2>Orquídeas</h2>
+  <div class="grade"><article class="peca" data-cat="orquideas" data-preco="80" data-nome="orquídea baby" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886412.jpg" alt="Orquídea Baby" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/orquidea-baby-2886412.html">Orquídea Baby</a></h3>
+  <p class="peca__preco"><b>R$ 80,00</b></p>
+</article><article class="peca" data-cat="orquideas" data-preco="120" data-nome="orquídea no cachepô" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Recomendado</span><img src="assets/produtos/2886423.jpg" alt="Orquídea no Cachepô" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/orquidea-no-cachepo-2886423.html">Orquídea no Cachepô</a></h3>
+  <p class="peca__preco"><b>R$ 120,00</b></p>
+</article><article class="peca" data-cat="orquideas" data-preco="110" data-nome="orquídea baby no vasinho" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2968197.jpg" alt="Orquídea Baby no vasinho" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/orquidea-baby-no-vasinho-2968197.html">Orquídea Baby no vasinho</a></h3>
+  <p class="peca__preco"><b>R$ 110,00</b></p>
+</article><article class="peca" data-cat="orquideas" data-preco="130" data-nome="orquídea baby com mimo no vasinho" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2968191.jpg" alt="Orquídea Baby com mimo no vasinho" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/orquidea-baby-com-mimo-no-vasinho-2968191.html">Orquídea Baby com mimo no vasinho</a></h3>
+  <p class="peca__preco"><b>R$ 130,00</b></p>
+</article><article class="peca" data-cat="orquideas" data-preco="170" data-nome="orquídea frozen ou azul no cachêpo" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3016182.jpg" alt="Orquídea Frozen ou Azul no cachêpo" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/orquidea-frozen-ou-azul-no-cachepo-3016182.html">Orquídea Frozen ou Azul no cachêpo</a></h3>
+  <p class="peca__preco"><b>R$ 170,00</b></p>
+</article><article class="peca" data-cat="orquideas" data-preco="150" data-nome="orquídea phalaenopsis no vaso" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/2886424.jpg" alt="Orquídea Phalaenopsis no vaso" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/orquidea-phalaenopsis-no-vaso-2886424.html">Orquídea Phalaenopsis no vaso</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="orquideas" data-preco="130" data-nome="orquidea baby no vasinho de ceramica" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/marca/sem-foto.svg" alt="Orquidea Baby no vasinho de ceramica" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/orquidea-baby-no-vasinho-de-ceramica-4849790.html">Orquidea Baby no vasinho de ceramica</a></h3>
+  <p class="peca__preco"><b>R$ 130,00</b></p>
+</article><article class="peca" data-cat="orquideas" data-preco="320" data-nome="box cartonada com orquidea cascata" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5279351.jpg" alt="Box Cartonada com Orquidea Cascata" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-cartonada-com-orquidea-cascata-5279351.html">Box Cartonada com Orquidea Cascata</a></h3>
+  <p class="peca__preco"><b>R$ 320,00</b></p>
+</article><article class="peca" data-cat="orquideas" data-preco="250" data-nome="box cartonada com orquidea cascata" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/4212675.jpg" alt="Box Cartonada com Orquidea Cascata" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-cartonada-com-orquidea-cascata-4212675.html">Box Cartonada com Orquidea Cascata</a></h3>
+  <p class="peca__preco"><b>R$ 250,00</b></p>
+</article><article class="peca" data-cat="orquideas" data-preco="150" data-nome="orquidea no cachepô com ferrero rocher" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5268703.jpg" alt="Orquidea no cachepô com ferrero rocher" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/orquidea-no-cachepo-com-ferrero-rocher-5268703.html">Orquidea no cachepô com ferrero rocher</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article></div>
+</section><section class="grupo-categoria" id="presentes" data-grupo="presentes">
+  <h2>Presentes</h2>
+  <div class="grade"><article class="peca" data-cat="presentes" data-preco="95" data-nome="mimo necessarie" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/5176703.jpg" alt="Mimo Necessarie" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mimo-necessarie-5176703.html">Mimo Necessarie</a></h3>
+  <p class="peca__preco"><b>R$ 95,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="140" data-nome="box guloseimas com coca cola" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Mais pedido</span><img src="assets/produtos/4542504.jpg" alt="Box Guloseimas com Coca Cola" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-guloseimas-com-coca-cola-4542504.html">Box Guloseimas com Coca Cola</a></h3>
+  <p class="peca__preco"><b>R$ 140,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="150" data-nome="box guloseimas com cerveja" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4542505.jpg" alt="Box Guloseimas com Cerveja" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-guloseimas-com-cerveja-4542505.html">Box Guloseimas com Cerveja</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="60" data-nome="caneca com bombons sortidos" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886706.jpg" alt="Caneca com bombons sortidos" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/caneca-com-bombons-sortidos-2886706.html">Caneca com bombons sortidos</a></h3>
+  <p class="peca__preco"><b>R$ 60,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="120" data-nome="caixa encanto" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886681.jpg" alt="Caixa encanto" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/caixa-encanto-2886681.html">Caixa encanto</a></h3>
+  <p class="peca__preco"><b>R$ 120,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="150" data-nome="cesto floral pequeno" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3120733.jpg" alt="Cesto Floral Pequeno" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesto-floral-pequeno-3120733.html">Cesto Floral Pequeno</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="115" data-nome="caixa surpresa pequena (cópia)" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3794428.jpg" alt="Caixa Surpresa Pequena (Cópia)" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/caixa-surpresa-pequena-copia-3794428.html">Caixa Surpresa Pequena (Cópia)</a></h3>
+  <p class="peca__preco"><b>R$ 115,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="125" data-nome="cesta mimo stitch" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3120721.jpg" alt="Cesta Mimo Stitch" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-mimo-stitch-3120721.html">Cesta Mimo Stitch</a></h3>
+  <p class="peca__preco"><b>R$ 125,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="35" data-nome="mimo de coração grande com colar (cópia)" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4420590.jpg" alt="Mimo de Coração Grande com colar (Cópia)" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mimo-de-coracao-grande-com-colar-copia-4420590.html">Mimo de Coração Grande com colar (Cópia)</a></h3>
+  <p class="peca__preco"><b>R$ 35,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="145" data-nome="cristal flowers" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Recomendado</span><img src="assets/produtos/2886723.jpg" alt="Cristal Flowers" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cristal-flowers-2886723.html">Cristal Flowers</a></h3>
+  <p class="peca__preco"><b>R$ 145,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="75" data-nome="mimo caixinha com colar ponto de luz (cópia)" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4420440.jpg" alt="Mimo Caixinha com colar ponto de luz (Cópia)" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mimo-caixinha-com-colar-ponto-de-luz-copia-4420440.html">Mimo Caixinha com colar ponto de luz (Cópia)</a></h3>
+  <p class="peca__preco"><b>R$ 75,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="150" data-nome="balancinho do amor" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886685.jpg" alt="Balancinho do amor" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/balancinho-do-amor-2886685.html">Balancinho do amor</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="150" data-nome="cristal coffee" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/marca/sem-foto.svg" alt="Cristal Coffee" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cristal-coffee-2886710.html">Cristal Coffee</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="180" data-nome="bolsa de palha pequena com flor calandiva" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Mais pedido</span><img src="assets/produtos/4588614.jpg" alt="Bolsa de palha pequena com flor calandiva" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/bolsa-de-palha-pequena-com-flor-calandiva-4588614.html">Bolsa de palha pequena com flor calandiva</a></h3>
+  <p class="peca__preco"><b>R$ 180,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="190" data-nome="bolsa de palha pequena com orquídea baby" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Mais pedido</span><img src="assets/produtos/2886696.jpg" alt="Bolsa de palha pequena com orquídea baby" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/bolsa-de-palha-pequena-com-orquidea-baby-2886696.html">Bolsa de palha pequena com orquídea baby</a></h3>
+  <p class="peca__preco"><b>R$ 190,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="199.9" data-nome="caixa surpresa média (cópia)" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3794429.jpg" alt="Caixa Surpresa Média (Cópia)" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/caixa-surpresa-media-copia-3794429.html">Caixa Surpresa Média (Cópia)</a></h3>
+  <p class="peca__preco"><b>R$ 199,90</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="235" data-nome="caixa surpresa grande (cópia)" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3794421.jpg" alt="Caixa Surpresa Grande (Cópia)" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/caixa-surpresa-grande-copia-3794421.html">Caixa Surpresa Grande (Cópia)</a></h3>
+  <p class="peca__preco"><b>R$ 235,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="280" data-nome="bolsa de palha fofura" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/2886686.jpg" alt="Bolsa de Palha Fofura" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/bolsa-de-palha-fofura-2886686.html">Bolsa de Palha Fofura</a></h3>
+  <p class="peca__preco"><b>R$ 280,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="280" data-nome="cesto aconchego com orquídea" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886707.jpg" alt="Cesto aconchego com orquídea" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesto-aconchego-com-orquidea-2886707.html">Cesto aconchego com orquídea</a></h3>
+  <p class="peca__preco"><b>R$ 280,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="320" data-nome="bolsa de palha natural média com orquídea" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886694.jpg" alt="Bolsa de palha natural média com orquídea" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/bolsa-de-palha-natural-media-com-orquidea-2886694.html">Bolsa de palha natural média com orquídea</a></h3>
+  <p class="peca__preco"><b>R$ 320,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="375" data-nome="rosa eterna" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886731.jpg" alt="Rosa Eterna" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/rosa-eterna-2886731.html">Rosa Eterna</a></h3>
+  <p class="peca__preco"><b>R$ 375,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="10" data-nome="plaquinhas com declaração" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2886726.jpg" alt="Plaquinhas com declaração" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/plaquinhas-com-declaracao-2886726.html">Plaquinhas com declaração</a></h3>
+  <p class="peca__preco"><b>R$ 10,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="20" data-nome="porta retrato 1 foto (cópia)" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3715481.jpg" alt="Porta retrato 1 foto (Cópia)" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/porta-retrato-1-foto-copia-3715481.html">Porta retrato 1 foto (Cópia)</a></h3>
+  <p class="peca__preco"><b>R$ 20,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="15" data-nome="balão" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3576592.jpg" alt="Balão" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/balao-3576592.html">Balão</a></h3>
+  <p class="peca__preco"><b>R$ 15,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="25" data-nome="quadrinho decorativo" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955733.jpg" alt="QUADRINHO DECORATIVO" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/quadrinho-decorativo-2955733.html">QUADRINHO DECORATIVO</a></h3>
+  <p class="peca__preco"><b>R$ 25,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="35" data-nome="porta retrato 3fotos (cópia)" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3715484.jpg" alt="Porta retrato 3fotos (Cópia)" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/porta-retrato-3fotos-copia-3715484.html">Porta retrato 3fotos (Cópia)</a></h3>
+  <p class="peca__preco"><b>R$ 35,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="35" data-nome="porta retrato 2fotos (cópia)" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3715482.jpg" alt="Porta retrato 2fotos (Cópia)" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/porta-retrato-2fotos-copia-3715482.html">Porta retrato 2fotos (Cópia)</a></h3>
+  <p class="peca__preco"><b>R$ 35,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="240" data-nome="box elegância" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3068012.jpg" alt="Box Elegância" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-elegancia-3068012.html">Box Elegância</a></h3>
+  <p class="peca__preco"><b>R$ 240,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="295" data-nome="maleta love" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3068176.jpg" alt="Maleta Love" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/maleta-love-3068176.html">Maleta Love</a></h3>
+  <p class="peca__preco"><b>R$ 295,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="269.9" data-nome="bag floratta" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3068290.jpg" alt="Bag Floratta" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/bag-floratta-3068290.html">Bag Floratta</a></h3>
+  <p class="peca__preco"><b>R$ 269,90</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="35" data-nome="porta retrato 2fotos (cópia) (cópia) (cópia)" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4420928.jpg" alt="Porta retrato 2fotos (Cópia) (Cópia) (Cópia)" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/porta-retrato-2fotos-copia-copia-copia-4420928.html">Porta retrato 2fotos (Cópia) (Cópia) (Cópia)</a></h3>
+  <p class="peca__preco"><b>R$ 35,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="160" data-nome="caixa personalizada com bombons (cópia)" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3594722.jpg" alt="Caixa Personalizada com bombons (Cópia)" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/caixa-personalizada-com-bombons-copia-3594722.html">Caixa Personalizada com bombons (Cópia)</a></h3>
+  <p class="peca__preco"><b>R$ 160,00</b></p>
+</article><article class="peca" data-cat="presentes" data-preco="32" data-nome="mimo de coração  pequeno com brinco e colar (cópia)" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/4420587.jpg" alt="Mimo de Coração  Pequeno com Brinco e Colar (Cópia)" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mimo-de-coracao-pequeno-com-brinco-e-colar-copia-4420587.html">Mimo de Coração  Pequeno com Brinco e Colar (Cópia)</a></h3>
+  <p class="peca__preco"><b>R$ 32,00</b></p>
+</article></div>
+</section><section class="grupo-categoria" id="presentes-masculinos" data-grupo="presentes-masculinos">
+  <h2>Presentes Masculinos</h2>
+  <div class="grade"><article class="peca" data-cat="presentes-masculinos" data-preco="119.9" data-nome="box de chocolate" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4903551.jpg" alt="Box de Chocolate" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-de-chocolate-4903551.html">Box de Chocolate</a></h3>
+  <p class="peca__preco"><b>R$ 119,90</b></p>
+</article><article class="peca" data-cat="presentes-masculinos" data-preco="140" data-nome="balde pequeno coca-cola" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4903561.jpg" alt="Balde pequeno Coca-Cola" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/balde-pequeno-coca-cola-4903561.html">Balde pequeno Coca-Cola</a></h3>
+  <p class="peca__preco"><b>R$ 140,00</b></p>
+</article><article class="peca" data-cat="presentes-masculinos" data-preco="140" data-nome="box guloseimas com coca cola" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Mais pedido</span><img src="assets/produtos/4903545.jpg" alt="Box Guloseimas com Coca Cola" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-guloseimas-com-coca-cola-4903545.html">Box Guloseimas com Coca Cola</a></h3>
+  <p class="peca__preco"><b>R$ 140,00</b></p>
+</article><article class="peca" data-cat="presentes-masculinos" data-preco="150" data-nome="box guloseimas com cerveja" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4903544.jpg" alt="Box Guloseimas com Cerveja" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-guloseimas-com-cerveja-4903544.html">Box Guloseimas com Cerveja</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="presentes-masculinos" data-preco="150" data-nome="box com copo térmico" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Mais pedido</span><img src="assets/produtos/4903533.jpg" alt="Box com Copo térmico" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-com-copo-termico-4903533.html">Box com Copo térmico</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="presentes-masculinos" data-preco="179.99" data-nome="cesta elegancia" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4903567.jpg" alt="Cesta elegancia" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-elegancia-4903567.html">Cesta elegancia</a></h3>
+  <p class="peca__preco"><b>R$ 179,99</b></p>
+</article><article class="peca" data-cat="presentes-masculinos" data-preco="235" data-nome="balde grande de cerveja" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Edição limitada</span><img src="assets/produtos/4903553.jpg" alt="Balde Grande de cerveja" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/balde-grande-de-cerveja-4903553.html">Balde Grande de cerveja</a></h3>
+  <p class="peca__preco"><b>R$ 235,00</b></p>
+</article><article class="peca" data-cat="presentes-masculinos" data-preco="275" data-nome="cesta premium com mini bolo" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4903723.jpg" alt="Cesta Premium com Mini Bolo" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-premium-com-mini-bolo-4903723.html">Cesta Premium com Mini Bolo</a></h3>
+  <p class="peca__preco"><b>R$ 275,00</b></p>
+</article><article class="peca" data-cat="presentes-masculinos" data-preco="275" data-nome="cesta premium com caneca" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Mais pedido</span><img src="assets/produtos/4903556.jpg" alt="Cesta Premium com caneca" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/cesta-premium-com-caneca-4903556.html">Cesta Premium com caneca</a></h3>
+  <p class="peca__preco"><b>R$ 275,00</b></p>
+</article><article class="peca" data-cat="presentes-masculinos" data-preco="290" data-nome="bag de cerveja" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Recomendado</span><img src="assets/produtos/4903554.jpg" alt="Bag de Cerveja" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/bag-de-cerveja-4903554.html">Bag de Cerveja</a></h3>
+  <p class="peca__preco"><b>R$ 290,00</b></p>
+</article><article class="peca" data-cat="presentes-masculinos" data-preco="360" data-nome="box luxo whisky jack daniels 375 ml" data-esgotado="nao">
+  <div class="peca__foto"><span class="peca__selo">Recomendado</span><img src="assets/produtos/4903555.jpg" alt="Box Luxo Whisky Jack Daniels 375 ml" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-luxo-whisky-jack-daniels-375-ml-4903555.html">Box Luxo Whisky Jack Daniels 375 ml</a></h3>
+  <p class="peca__preco"><b>R$ 360,00</b></p>
+</article><article class="peca" data-cat="presentes-masculinos" data-preco="15" data-nome="almofadas diversas" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4903558.jpg" alt="Almofadas Diversas" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/almofadas-diversas-4903558.html">Almofadas Diversas</a></h3>
+  <p class="peca__preco"><b>R$ 15,00</b></p>
+</article></div>
+</section><section class="grupo-categoria" id="cesta-matenidade" data-grupo="cesta-matenidade">
+  <h2>Cesta Matenidade</h2>
+  <div class="grade"><article class="peca" data-cat="cesta-matenidade" data-preco="180" data-nome="box revelação" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3380335.jpg" alt="Box Revelação" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-revelacao-3380335.html">Box Revelação</a></h3>
+  <p class="peca__preco"><b>R$ 180,00</b></p>
+</article><article class="peca" data-cat="cesta-matenidade" data-preco="190" data-nome="box maternidade com flores" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3404311.jpg" alt="Box Maternidade com flores" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-maternidade-com-flores-3404311.html">Box Maternidade com flores</a></h3>
+  <p class="peca__preco"><b>R$ 190,00</b></p>
+</article><article class="peca" data-cat="cesta-matenidade" data-preco="285" data-nome="box maternidade com orquídea baby" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3404315.jpg" alt="Box Maternidade com Orquídea Baby" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-maternidade-com-orquidea-baby-3404315.html">Box Maternidade com Orquídea Baby</a></h3>
+  <p class="peca__preco"><b>R$ 285,00</b></p>
+</article><article class="peca" data-cat="cesta-matenidade" data-preco="260" data-nome="box maternidade baby" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4629888.jpg" alt="Box Maternidade baby" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/box-maternidade-baby-4629888.html">Box Maternidade baby</a></h3>
+  <p class="peca__preco"><b>R$ 260,00</b></p>
+</article><article class="peca" data-cat="cesta-matenidade" data-preco="150" data-nome="caixa maternidade baby" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4629934.jpg" alt="Caixa Maternidade Baby" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/caixa-maternidade-baby-4629934.html">Caixa Maternidade Baby</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article></div>
+</section><section class="grupo-categoria" id="pelucia" data-grupo="pelucia">
+  <h2>Pelucia</h2>
+  <div class="grade"><article class="peca" data-cat="pelucia" data-preco="20" data-nome="ursinho chaveiro" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955468.jpg" alt="Ursinho Chaveiro" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/ursinho-chaveiro-2955468.html">Ursinho Chaveiro</a></h3>
+  <p class="peca__preco"><b>R$ 20,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="420" data-nome="urso ted 1 metro" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3166320.jpg" alt="Urso Ted 1 metro" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/urso-ted-1-metro-3166320.html">Urso Ted 1 metro</a></h3>
+  <p class="peca__preco"><b>R$ 420,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="260" data-nome="pelucia stitch 45cm" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4542513.jpg" alt="Pelucia Stitch 45cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-stitch-45cm-4542513.html">Pelucia Stitch 45cm</a></h3>
+  <p class="peca__preco"><b>R$ 260,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="420" data-nome="urso 60cm panda pelucia &quot;eu te amo&quot;" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4763222.jpg" alt="Urso 60cm Panda pelucia &quot;Eu te amo&quot;" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/urso-60cm-panda-pelucia-eu-te-amo-4763222.html">Urso 60cm Panda pelucia &quot;Eu te amo&quot;</a></h3>
+  <p class="peca__preco"><b>R$ 420,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="50" data-nome="pelucia urso amor 20cm" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4555723.jpg" alt="Pelucia urso amor 20cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-urso-amor-20cm-4555723.html">Pelucia urso amor 20cm</a></h3>
+  <p class="peca__preco"><b>R$ 50,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="85" data-nome="pelúcia capivara 30cm" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3606035.jpg" alt="Pelúcia capivara 30cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-capivara-30cm-3606035.html">Pelúcia capivara 30cm</a></h3>
+  <p class="peca__preco"><b>R$ 85,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="85" data-nome="pelúcia angel 25cm" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955480.jpg" alt="Pelúcia Angel 25cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-angel-25cm-2955480.html">Pelúcia Angel 25cm</a></h3>
+  <p class="peca__preco"><b>R$ 85,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="65" data-nome="pelucia angel 15cm" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955477.jpg" alt="Pelucia Angel 15cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-angel-15cm-2955477.html">Pelucia Angel 15cm</a></h3>
+  <p class="peca__preco"><b>R$ 65,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="65" data-nome="pelucia stitch 15cm" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955469.jpg" alt="Pelucia Stitch 15cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-stitch-15cm-2955469.html">Pelucia Stitch 15cm</a></h3>
+  <p class="peca__preco"><b>R$ 65,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="95" data-nome="urso 35cm" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3177807.jpg" alt="Urso 35cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/urso-35cm-3177807.html">Urso 35cm</a></h3>
+  <p class="peca__preco"><b>R$ 95,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="85" data-nome="pelucia stitch 25cm" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955471.jpg" alt="Pelucia Stitch 25cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-stitch-25cm-2955471.html">Pelucia Stitch 25cm</a></h3>
+  <p class="peca__preco"><b>R$ 85,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="99.99" data-nome="stitch 25cm pelucia" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3536928.jpg" alt="Stitch 25cm Pelucia" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/stitch-25cm-pelucia-3536928.html">Stitch 25cm Pelucia</a></h3>
+  <p class="peca__preco"><b>R$ 99,99</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="220" data-nome="urso 65cm" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3166332.jpg" alt="Urso 65cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/urso-65cm-3166332.html">Urso 65cm</a></h3>
+  <p class="peca__preco"><b>R$ 220,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="99.99" data-nome="angel 25cm pelucia" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3536945.jpg" alt="Angel 25cm Pelucia" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/angel-25cm-pelucia-3536945.html">Angel 25cm Pelucia</a></h3>
+  <p class="peca__preco"><b>R$ 99,99</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="95" data-nome="pelucia urso amor" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3606022.jpg" alt="Pelucia urso amor" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-urso-amor-3606022.html">Pelucia urso amor</a></h3>
+  <p class="peca__preco"><b>R$ 95,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="60" data-nome="pelúcia ursinho 20cm" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3606033.jpg" alt="Pelúcia ursinho 20cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-ursinho-20cm-3606033.html">Pelúcia ursinho 20cm</a></h3>
+  <p class="peca__preco"><b>R$ 60,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="150" data-nome="pelucia urso musical 40cm" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3606028.jpg" alt="Pelucia urso musical 40cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-urso-musical-40cm-3606028.html">Pelucia urso musical 40cm</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="175" data-nome="urso 45cm bege com marrom" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3166325.jpg" alt="Urso 45cm bege com marrom" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/urso-45cm-bege-com-marrom-3166325.html">Urso 45cm bege com marrom</a></h3>
+  <p class="peca__preco"><b>R$ 175,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="95" data-nome="pelúcia panda 30cm" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3606053.jpg" alt="Pelúcia panda 30cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-panda-30cm-3606053.html">Pelúcia panda 30cm</a></h3>
+  <p class="peca__preco"><b>R$ 95,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="150" data-nome="pelúcia capivara 50cm" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3606041.jpg" alt="Pelúcia capivara 50cm" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-capivara-50cm-3606041.html">Pelúcia capivara 50cm</a></h3>
+  <p class="peca__preco"><b>R$ 150,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="60" data-nome="mochila capivara pequena" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3166374.jpg" alt="Mochila capivara pequena" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/mochila-capivara-pequena-3166374.html">Mochila capivara pequena</a></h3>
+  <p class="peca__preco"><b>R$ 60,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="50" data-nome="pelúcia pikachu com chaveiro" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955484.jpg" alt="Pelúcia Pikachu com chaveiro" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-pikachu-com-chaveiro-2955484.html">Pelúcia Pikachu com chaveiro</a></h3>
+  <p class="peca__preco"><b>R$ 50,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="85" data-nome="pelucia dinossauro médio" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955369.jpg" alt="Pelucia Dinossauro Médio" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-dinossauro-medio-2955369.html">Pelucia Dinossauro Médio</a></h3>
+  <p class="peca__preco"><b>R$ 85,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="70" data-nome="pelucia centopéia" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/2955396.jpg" alt="Pelucia Centopéia" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-centopeia-2955396.html">Pelucia Centopéia</a></h3>
+  <p class="peca__preco"><b>R$ 70,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="55" data-nome="pelucia dinossauro pequeno" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955421.jpg" alt="Pelucia Dinossauro Pequeno" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-dinossauro-pequeno-2955421.html">Pelucia Dinossauro Pequeno</a></h3>
+  <p class="peca__preco"><b>R$ 55,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="89.9" data-nome="pelúcia baby" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955409.jpg" alt="Pelúcia Baby" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-baby-2955409.html">Pelúcia Baby</a></h3>
+  <p class="peca__preco"><b>R$ 89,90</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="95" data-nome="pelucia elefante" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3166430.jpg" alt="Pelucia Elefante" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-elefante-3166430.html">Pelucia Elefante</a></h3>
+  <p class="peca__preco"><b>R$ 95,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="65" data-nome="pelucia tartaruga" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955350.jpg" alt="Pelucia Tartaruga" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-tartaruga-2955350.html">Pelucia Tartaruga</a></h3>
+  <p class="peca__preco"><b>R$ 65,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="85" data-nome="pelucia dado interativo" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955387.jpg" alt="Pelucia Dado Interativo" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-dado-interativo-2955387.html">Pelucia Dado Interativo</a></h3>
+  <p class="peca__preco"><b>R$ 85,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="95" data-nome="pelucia bola" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955389.jpg" alt="Pelucia Bola" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-bola-2955389.html">Pelucia Bola</a></h3>
+  <p class="peca__preco"><b>R$ 95,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="99.9" data-nome="pelucia ovelha" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/2955264.jpg" alt="Pelucia Ovelha" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-ovelha-2955264.html">Pelucia Ovelha</a></h3>
+  <p class="peca__preco"><b>R$ 99,90</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="99.9" data-nome="pelúcia unicórnio baby" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/2955403.jpg" alt="Pelúcia Unicórnio Baby" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-unicornio-baby-2955403.html">Pelúcia Unicórnio Baby</a></h3>
+  <p class="peca__preco"><b>R$ 99,90</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="50" data-nome="pelucia capivara" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/3166370.jpg" alt="Pelucia Capivara" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/pelucia-capivara-3166370.html">Pelucia Capivara</a></h3>
+  <p class="peca__preco"><b>R$ 50,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="220" data-nome="stitch com a xepa 45cm pelucia" data-esgotado="sim">
+  <div class="peca__foto"><span class="peca__selo peca__selo--fora">Esgotado</span><img src="assets/produtos/3536936.jpg" alt="Stitch com a xepa 45cm Pelucia" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/stitch-com-a-xepa-45cm-pelucia-3536936.html">Stitch com a xepa 45cm Pelucia</a></h3>
+  <p class="peca__preco"><b>R$ 220,00</b></p>
+</article><article class="peca" data-cat="pelucia" data-preco="35" data-nome="almofada modelos variados" data-esgotado="nao">
+  <div class="peca__foto"><img src="assets/produtos/4480332.jpg" alt="ALMOFADA MODELOS VARIADOS" loading="lazy" decoding="async"></div>
+  <h3><a href="produto/almofada-modelos-variados-4480332.html">ALMOFADA MODELOS VARIADOS</a></h3>
+  <p class="peca__preco"><b>R$ 35,00</b></p>
+</article></div>
+</section>
+  </div>
+  <p class="vazio" id="vazio" hidden>Nenhum presente com esses filtros. <button class="pilula" type="button" id="limpar">Limpar os filtros</button></p>
+</div></section>
+</main><footer class="rodape">
+  <div class="faixa"><div class="quadro">
+    <p class="rodape__nome">Beta Presentes</p>
+    <div class="rodape__grade">
+      <div>
+        <h4>A loja</h4>
+        <address>
+          R. dos Lírios, 710 — Sala 3<br>
+          Portais (Polvilho)<br>
+          Cajamar — SP<br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=-23.405212,-46.856832" target="_blank" rel="noopener">Ver no mapa</a>
+        </address>
+      </div>
+      <div>
+        <h4>Falar com a Beta</h4>
+        <ul>
+          <li><a data-zap="Olá! Vim pelo site da Beta Presentes." href="#">WhatsApp (11) 97169-7239</a></li>
+          <li><a href="https://instagram.com/betapresente" target="_blank" rel="noopener">Instagram @betapresente</a></li>
+          <li><a href="https://app.cardapioweb.com/beta_presente" target="_blank" rel="noopener">Catálogo oficial</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horário</h4>
+        <ul>
+          <li>Segunda a sexta · 10h às 19h</li>
+          <li>Sábado · 10h às 18h</li>
+          <li>Domingo · fechado</li>
+        </ul>
+      </div>
+      <div>
+        <h4>O site</h4>
+        <ul>
+          <li><a href="catalogo.html">Catálogo completo</a></li>
+          <li><a href="sobre.html">A loja e as políticas</a></li>
+          <li><a href="index.html#entrega">Entrega e pagamento</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rodape__fim">
+      <span>Beta Presentes · CNPJ 52.715.677/0001-00</span>
+      <span>Produtos, nomes e preços do catálogo oficial da loja, consultado em 30/10/2026.</span>
+    </div>
+  </div></div>
+</footer>
+<a class="zap-flutua" data-zap="Olá! Vim pelo site da Beta Presentes e gostaria de fazer um pedido." href="#" aria-label="Falar com a Beta Presentes no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+</a><script src="assets/js/base.js"></script>
+<script src="assets/js/catalogo.js"></script>
+</body>
+</html>
